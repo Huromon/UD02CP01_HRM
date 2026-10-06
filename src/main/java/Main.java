@@ -1,6 +1,8 @@
 public class Main {
 
     public static void main(String[] args) {
+        System.out.println("mientras que los Hilos creados con Runneable  parece que mantienen el orden");
+        System.out.println("los hilos con .start() se van mezclando entre ellos al solaparse los unos con los otros");
         System.out.println("con run");
        MiHebra hebra1 = new MiHebra(17,'A');
        MiHebra hebra2 = new MiHebra(15,'B');
@@ -18,8 +20,7 @@ public class Main {
         hebraB3.start();
 
 
-        System.out.println("mientras que los Hilos creados con Runneable  parece que mantienen el orden");
-        System.out.println("los hilos con .start() se van mezclando entre ellos al solaparse los unos con los otros");
+
     }
 
 
